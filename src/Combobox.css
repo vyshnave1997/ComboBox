@@ -1,0 +1,40 @@
+/* src/components/Combobox.css */
+.combobox {
+  position: relative;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.combobox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555; /* Lighter border for visibility */
+  border-radius: 5px;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+}
+
+.combobox .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #555; /* Lighter border for visibility */
+  border-radius: 5px;
+  background-color: #444; /* Slightly lighter dark background */
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.combobox .dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #fff; /* White text color */
+}
+
+.combobox .dropdown-item:hover {
+  background-color: #555; /* Slightly lighter dark background on hover */
+}
